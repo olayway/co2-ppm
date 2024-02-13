@@ -2,7 +2,7 @@
 datapackage:
   name: co2-ppm
   title: "CO2 PPM - Trends in Atmospheric Carbon Dioxide"
-  description: Data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites).
+  description: "Data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites)."
   homepage: http://www.esrl.noaa.gov/gmd/ccgg/trends
   version: 0.1.0
   licenses:
@@ -125,7 +125,27 @@ datapackage:
           - name: Uncertainty
             type: number
             description: The uncertainty in the global annual mean growth rate is estimated using a monte carlo technique that computes 100 time series of global annual growth rates, each time using measurement records from a different sampling of sites from the NOAA ESRL cooperative air sampling network. Each year has a different uncertainty. Please see Conway et al., 1994, JGR, vol. 99, no. D11. for a complete discussion. The last one or two years listed could have preliminary uncertainties set equal to the average uncertainty since 1980. Before 1980 the global growth rate has been approximated by taking the average of Mauna Loa and the South Pole, correcting for the offset between (MLO+SPO)/2 and the global Marine Boundary Layer, as described in Ballantyne et al, 2012.
-            
+  views:
+    - name: graph
+      title: Trends in Atmospheric Carbon Dioxide
+      resources: ["co2-mm-mlo"]
+      specType: simple
+      spec:
+        type: lines-and-points
+        group: Date
+        series:
+          - Interpolated
+          - Trend
+    - name: growth-rate
+      title: Growth rate of Carbon Dioxide
+      resources: ["co2-gr-mlo"]
+      specType: simple
+      spec:
+        type: bar
+        group: Year
+        series:
+          - Annual Increase
+
 ---
 
 CO2 PPM - Trends in Atmospheric Carbon Dioxide. Data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites).
