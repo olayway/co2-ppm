@@ -1,4 +1,4 @@
-# CO2 PPM - Trends in Atmospheric Carbon Dioxide 23
+# CO2 PPM - Trends in Atmospheric Carbon Dioxide 2
 
 TEST CO2 PPM - Trends in Atmospheric Carbon Dioxide. Data are sourced from the US Government's Earth System Research Laboratory, Global Monitoring Division. Two main series are provided: the Mauna Loa series (which has the longest continuous series since 1958) and a Global Average series (a global average over marine surface sites).
 
