@@ -1,24 +1,33 @@
 TEST
 
 <VegaLite
-  spec={{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "URL": "data/co2-annmean-mlo.csv",
-      "format": {"type": "csv"}
-    },
-    "mark": {
-      "type": "line"
-    },
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "ordinal"
+  data={{
+    table: [
+      {
+        x: 1850,
+        y: -0.418
       },
-      "y": {
-        "field": "Mean",
-        "type": "quantitative"
+      {
+        x: 2020,
+        y: 0.923
       }
-    }
+    ]
+  }}
+  spec={{
+    $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
+    data: {
+      name: 'table'
+    },
+    encoding: {
+      x: {
+        field: 'x',
+        type: 'ordinal'
+      },
+      y: {
+        field: 'y',
+        type: 'quantitative'
+      }
+    },
+    mark: 'bar'
   }}
 />
