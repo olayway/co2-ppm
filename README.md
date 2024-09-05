@@ -2,16 +2,7 @@ TEST
 
 <VegaLite
   data={{
-    table: [
-      {
-        x: 1850,
-        y: -0.418
-      },
-      {
-        x: 2020,
-        y: 0.923
-      }
-    ]
+    URL: "data/co2-annmean-mlo.csv"
   }}
   spec={{
     $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
@@ -20,14 +11,14 @@ TEST
     },
     encoding: {
       x: {
-        field: 'x',
-        type: 'ordinal'
+        field: 'Year',
+        type: 'temporal'
       },
       y: {
-        field: 'y',
+        field: 'Mean',
         type: 'quantitative'
       }
     },
-    mark: 'bar'
+    mark: 'line'
   }}
 />
