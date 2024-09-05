@@ -1,9 +1,0 @@
-{
-  "resources": [
-    {
-      "name": "co2-mm-mlo",
-      "path": "data/co2-mm-mlo.csv",
-      "format": "csv",
-    }
-  ]
-}
