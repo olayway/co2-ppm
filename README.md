@@ -12,13 +12,13 @@ TEST
     encoding: {
       x: {
         field: 'Year',
-        type: 'temporal'
+        type: 'ordinal'
       },
       y: {
         field: 'Mean',
         type: 'quantitative'
       }
     },
-    mark: 'line'
+    mark: 'bar'
   }}
 />
