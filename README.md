@@ -33,6 +33,9 @@ TEST2
     "mark": {
       "type": "bar"
     },
+    "data": {
+      "name": "chart"
+    },
     "encoding": {
       "x": {
         "field": "Year",
