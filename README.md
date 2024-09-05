@@ -1,8 +1,10 @@
+TEST
+
 <VegaLite
   spec={{
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "URL": "",
+      "URL": "data/co2-annmean-mlo.csv",
       "format": {"type": "csv"}
     },
     "mark": {
