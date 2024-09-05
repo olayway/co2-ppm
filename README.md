@@ -1,19 +1,22 @@
 <VegaLite
   spec={{
-    $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
-    data: {
-      URL: "data/co2-mm-gl.csv"
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "URL": "",
+      "format": {"type": "csv"}
     },
-    encoding: {
-      x: {
-        field: 'Date',
-        type: 'temporal'
+    "mark": {
+      "type": "line"
+    },
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal"
       },
-      y: {
-        field: 'Average',
-        type: 'quantitative'
+      "y": {
+        "field": "Mean",
+        "type": "quantitative"
       }
-    },
-    mark: 'line'
+    }
   }}
 />
